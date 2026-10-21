@@ -40,7 +40,7 @@ SecurePortal är ett portfolio-projekt som demonstrerar grundläggande säkerhet
 ### 1. Klona projektet
 
 ```bash
-git clone https://github.com/PaulinaStenqvist/SecurePortal
+git clone https://github.com/PaulinaStenqvist/SecurePortal-programming-web-security-vulnerabilities-testing
 cd secure-portal
 ```
 
