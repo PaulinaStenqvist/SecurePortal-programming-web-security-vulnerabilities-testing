@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | SecurePortal</title>
+</head>
+<body>
+    <h1>Create account</h1>
+
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+
+    <form method="post">
+        <input type="hidden" name="csrf_token"
+               value="{{ csrf_token() }}">
+
+        <label for="username">Username</label>
+        <input id="username" name="username"
+               maxlength="50" required>
+
+        <label for="password">Password (at least 12 characters)</label>
+        <input id="password" name="password"
+               type="password" minlength="12" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already registered?
+        <a href="{{ url_for('login') }}">Log in</a>
+    </p>
+</body>
+</html>

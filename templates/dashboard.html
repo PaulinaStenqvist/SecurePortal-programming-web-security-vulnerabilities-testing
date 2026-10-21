@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | SecurePortal</title>
+</head>
+<body>
+    <h1>SecurePortal Dashboard</h1>
+
+    <p>Welcome, {{ username }}!</p>
+    <p>You are logged in.</p>
+
+    <h2>My Documents</h2>
+    <p>Document management is coming next.</p>
+
+    <h2>User Profile</h2>
+    <p>Your account: {{ username }}</p>
+
+   <form action="{{ url_for('logout') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    </form>
+</body>
+</html>

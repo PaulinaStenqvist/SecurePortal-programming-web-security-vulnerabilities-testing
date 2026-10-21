@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePortal | Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 22px 32px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            color: #cbd5e1;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .welcome {
+            margin-bottom: 28px;
+        }
+
+        .welcome h2 {
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: #64748b;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .status {
+            display: inline-block;
+            background: #dcfce7;
+            color: #166534;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SecurePortal</h1>
+        <p>Secure business workspace</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to your dashboard</h2>
+            <p>Your workspace for documents, users and security.</p>
+            <span class="status">Development environment</span>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h3>My Documents</h3>
+                <p>Access and manage your documents.</p>
+            </article>
+
+            <article class="card">
+                <h3>User Profile</h3>
+                <p>View your account information.</p>
+            </article>
+
+            <article class="card">
+                <h3>Administration</h3>
+                <p>Administrative features will be added later.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        SecurePortal — Security Engineering Portfolio Project
+    </footer>
+</body>
+</html>
