@@ -40,11 +40,9 @@ SecurePortal är ett portfolio-projekt som demonstrerar grundläggande säkerhet
 ### 1. Klona projektet
 
 ```bash
-git clone <din-repository-url>
+git clone https://github.com/PaulinaStenqvist/SecurePortal
 cd secure-portal
 ```
-
-Ersätt `<din-repository-url>` med adressen till ditt GitHub-repository.
 
 ### 2. Skapa en virtuell miljö
 
